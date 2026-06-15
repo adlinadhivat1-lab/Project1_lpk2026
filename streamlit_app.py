@@ -1421,7 +1421,9 @@ Berdasarkan data yang tersedia, senyawa ini memiliki tingkat bahaya
 berupa {data[3].lower()} sehingga memerlukan penanganan yang sesuai
 dengan prosedur keselamatan laboratorium.
 """)
-    
+    st.markdown("<br><br>", unsafe_allow_html=True)
+    if st.button("⬅ Kembali ke Home"):
+    go_to("🏠 Home")
 # ================= TENTANG =================
 
 if menu == "ℹ️ Tentang":
