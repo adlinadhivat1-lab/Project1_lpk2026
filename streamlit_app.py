@@ -762,7 +762,11 @@ if dark_mode:
 
     st.markdown("""
     <style>
+    if dark_mode:
 
+    st.markdown("""
+    <style>
+                
     .stApp{
         background:linear-gradient(
         135deg,
@@ -784,6 +788,19 @@ if dark_mode:
     section[data-testid="stSidebar"] *{
         color:white !important;
     }
+         /* TAMBAHAN */
+    .menu-title{
+        color:white !important;
+    }
+
+    .stTabs{
+        background:#0F172A !important;
+        border:none !important;
+        box-shadow:none !important;
+    }
+
+    </style>
+    """, unsafe_allow_html=True)
 
     /* Card */
     .card{
